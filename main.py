@@ -35,8 +35,8 @@ while i < len(lista_a_comprobar):
 print(lista_a_comprobar)
 
 # saber cual es la mas repetida
-input = input("Ingrese una oracion y sepa cual es la letra mas repetida")
-print()
+input = input("Ingrese una oracion y sepa cual es la letra mas repetida: ")
+print(collections.Counter(limpiar_string(input.lower())).most_common(1)[0])
 
 
 
